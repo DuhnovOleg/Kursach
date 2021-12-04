@@ -85,22 +85,6 @@ int** create_matrix()
 	return A;
 }
 
-list<int> delete_elem(list<int> ls, int k)
-{
-	int i = 0;
-	list<int> ::iterator it = ls.begin();
-	while (i <= k)
-	{
-		if (i == k)
-		{
-			ls.remove(*it);
-		}
-		it++;
-		i++;
-	}
-	return ls;
-}
-
 //void Sigismund_Dijkstra(int** A, int n, int x)
 //{
 //	for (int i = 0; i < n; i++)
