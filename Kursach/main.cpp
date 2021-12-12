@@ -178,7 +178,7 @@ void Sigismund_Dijkstra(int** A, int n, int x, int* dist)
 void create_db()
 {
 	char name[16];
-	printf("Создание БД.\nВведите имя БД: ");
+	printf("Создание Файла.\nВведите имя: ");
 	scanf("%s", name);
 	OemToCharBuffA(name, name, strlen(name));
 	char folder[26] = "DB\\", format[5] = ".txt";
@@ -292,7 +292,7 @@ void menu1()
 void open_db()
 {
 	char name[16];
-	printf("Открытие БД.\nВведите имя БД: ");
+	printf("Открытие Файл.\nВведите имя Файла: ");
 	scanf("%s", name);
 	OemToCharBuffA(name, name, strlen(name));
 	char folder[26] = "DB\\", format[5] = ".txt";
@@ -367,7 +367,7 @@ void read_file()
 void menu()
 {
 	system("cls");
-	printf("1) Создать базу данных.\n2) Открыть базу данных.\n3) Выход. \nВыберите пункт: ");
+	printf("1) Создать Файл.\n2) Открыть Файл.\n3) Выход. \nВыберите пункт: ");
 	int SW2;
 	do {
 		SW2 = _getch();
